@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capítulo 1 · La última señal · Letra Viva</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <a href="index.html">🏠 <span>Inicio</span></a>
+    <a href="favoritos.html">❤️ <span>Favoritos</span></a>
+    <a href="explorar.html">🔍 <span>Explorar</span></a>
+    <a href="notificaciones.html">🔔 <span>Notificaciones</span></a>
+    <a href="perfil.html">👤 <span>Perfil</span></a>
+  </nav>
+
+  <div class="contenido">
+    <header class="barra-superior">
+      <a href="index.html" class="logo"><i class="ti ti-feather"></i> Letra <span class="viva">Viva</span></a>
+      <a href="escribir.html" class="boton">✍️ Escribir</a>
+    </header>
+
+    <main>
+      <article class="lector">
+        <a href="historia.html" class="volver">← La última señal</a>
+
+        <p class="lector-historia">Capítulo 1 de 3</p>
+        <h1>La señal</h1>
+
+        <div class="lector-texto">
+          <p>La radio llevaba seis inviernos en silencio, igual que todo el pueblo. Mara la conservaba sobre la repisa de la cocina por costumbre, como se guardan las fotos de quienes ya no están.</p>
+          <p>Por eso, cuando a las 3:17 de la madrugada una luz verde se encendió en el dial, pensó que seguía soñando. Se quedó quieta, con la taza tibia entre las manos, escuchando cómo el aparato chisporroteaba en la oscuridad.</p>
+          <p>Primero fue solo ruido. Después, una respiración. Y luego, una voz que conocía mejor que la suya: la de Tomás, su hermano, desaparecido mucho antes de que se apagaran las luces.</p>
+          <p>—Mara, si todavía estás ahí, no abras la puerta.</p>
+          <p>Ella dejó la taza sobre la mesa. Afuera, el viento se había detenido de golpe. Y entonces, alguien llamó tres veces.</p>
+        </div>
+
+        <!-- Anterior / siguiente -->
+        <nav class="navegacion-cap">
+          <a href="#" class="deshabilitado">← Anterior</a>
+          <span class="lector-historia">1 / 3</span>
+          <a href="lector.html">Siguiente →</a>
+        </nav>
+
+        <!-- Emociones -->
+        <section class="seccion">
+          <h2>¿Qué te hizo sentir este capítulo?</h2>
+          <div class="emociones">
+            <a href="login.html" class="emocion"><span>😢</span>Llorar · 24</a>
+            <a href="login.html" class="emocion"><span>😮</span>Sorpresa · 18</a>
+            <a href="login.html" class="emocion"><span>😂</span>Risa · 3</a>
+            <a href="login.html" class="emocion"><span>🔥</span>Fuego · 37</a>
+            <a href="login.html" class="emocion"><span>💔</span>Corazón roto · 9</a>
+          </div>
+        </section>
+
+        <!-- Donar -->
+        <div class="donar-caja">
+          <p>¿Te gustó este capítulo? Apoya a <strong>Luna Díaz</strong> para que siga escribiendo.</p>
+          <a href="#donar" class="boton">☕ Donar al escritor</a>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <!-- Ventana de donación -->
+  <div id="donar" class="modal">
+    <div class="modal-caja">
+      <a href="#" class="cerrar">✕</a>
+      <h2>Apoya a Luna Díaz</h2>
+      <p class="lector-historia">Elige cuánto quieres donar</p>
+
+      <div class="montos">
+        <label class="monto"><input type="radio" name="monto"> $1.000</label>
+        <label class="monto"><input type="radio" name="monto"> $2.000</label>
+        <label class="monto"><input type="radio" name="monto"> $5.000</label>
+      </div>
+
+      <input type="number" placeholder="Otro monto">
+      <a href="login.html" class="boton">Donar</a>
+      <p class="nota">Modo de prueba: no se cobra dinero real.</p>
+    </div>
+  </div>
+
+</body>
+</html>

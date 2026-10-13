@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta · Letra Viva</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <a href="index.html">🏠 <span>Inicio</span></a>
+    <a href="favoritos.html">❤️ <span>Favoritos</span></a>
+    <a href="explorar.html">🔍 <span>Explorar</span></a>
+    <a href="notificaciones.html">🔔 <span>Notificaciones</span></a>
+    <a href="perfil.html">👤 <span>Perfil</span></a>
+  </nav>
+
+  <div class="contenido">
+    <header class="barra-superior">
+      <a href="index.html" class="logo"><i class="ti ti-feather"></i> Letra <span class="viva">Viva</span></a>
+      <a href="escribir.html" class="boton">✍️ Escribir</a>
+    </header>
+
+    <main>
+      <form class="formulario" action="index.html">
+        <h1>Crea tu cuenta</h1>
+        <p class="formulario-sub">Únete a la comunidad: lee, siente y comparte tus historias.</p>
+
+        <label class="campo">
+          <span>Nombre</span>
+          <input type="text" placeholder="Tu nombre" required>
+        </label>
+
+        <label class="campo">
+          <span>Correo electrónico</span>
+          <input type="email" placeholder="hola@ejemplo.com" required>
+        </label>
+
+        <label class="campo">
+          <span>Contraseña</span>
+          <input type="password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+        </label>
+
+        <button type="submit" class="boton">Crear cuenta</button>
+
+        <p class="aviso-registro">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+      </form>
+    </main>
+  </div>
+
+</body>
+</html>
