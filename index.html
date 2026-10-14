@@ -9,24 +9,31 @@
 <body>
 
   <nav class="menu">
-    <a href="index.html" class="activo">🏠 <span>Inicio</span></a>
-    <a href="favoritos.html">❤️ <span>Favoritos</span></a>
-    <a href="explorar.html">🔍 <span>Explorar</span></a>
-    <a href="notificaciones.html">🔔 <span>Notificaciones</span></a>
-    <a href="perfil.html">👤 <span>Perfil</span></a>
+    <a href="index.html" class="logo logo-menu"><i class="ti ti-feather"></i> Letra <span class="viva">Viva</span></a>
+    <a href="index.html" class="activo"><i class="ti ti-home"></i> <span>Inicio</span></a>
+    <a href="favoritos.html"><i class="ti ti-heart"></i> <span>Favoritos</span></a>
+    <a href="explorar.html"><i class="ti ti-search lupa"></i> <span>Explorar</span></a>
+    <a href="notificaciones.html"><i class="ti ti-bell"></i> <span>Notificaciones</span></a>
+    <a href="perfil.html"><i class="ti ti-user"></i> <span>Perfil</span></a>
   </nav>
 
   <div class="contenido">
-    <header class="barra-superior">
-      <a href="index.html" class="logo"><i class="ti ti-feather"></i> Letra <span class="viva">Viva</span></a>
-      <a href="escribir.html" class="boton">✍️ Escribir</a>
+    <header class="barra-superior barra-inicio">
+      <a href="index.html" class="logo logo-movil"><i class="ti ti-feather"></i> Letra <span class="viva">Viva</span></a>
+      <div class="eslogan">
+        <h1>Detrás de cada historia hay alguien que se atrevió a escribirla, y delante, alguien que la va a sentir.</h1>
+        <p>Letra Viva es el puente entre los dos.</p>
+      </div>
+      <a href="escribir.html" class="boton-escribir">
+        <i class="ti ti-pencil"></i>
+        <span>
+          <strong>Comparte tu historia</strong>
+          <small>Escribe lo que sientes. Alguien, en algún lugar, está esperando leerlo.</small>
+        </span>
+      </a>
     </header>
 
     <main>
- <div class="eslogan">
-  <h1>Detrás de cada historia hay alguien que se atrevió a escribirla, y delante, alguien que la va a sentir.</h1>
-  <p>Letra Viva es el puente entre los dos.</p>
-</div>
       <section class="seccion">
   <h2>Más populares</h2>
 
@@ -63,6 +70,22 @@
     <span class="activo"></span>
     <span></span>
     <span></span>
+  </div>
+</section>
+<section class="seccion">
+  <h2>Géneros</h2>
+
+  <div class="generos">
+    <a href="explorar.html" class="genero" style="--color: #b0413e;">💘 Romance</a>
+    <a href="explorar.html" class="genero" style="--color: #3d3d5c;">👻 Terror</a>
+    <a href="explorar.html" class="genero" style="--color: #4b3b8f;">🐉 Fantasía</a>
+    <a href="explorar.html" class="genero" style="--color: #2f4f4f;">🔎 Misterio</a>
+    <a href="explorar.html" class="genero" style="--color: #1f5f8b;">🚀 Ciencia ficción</a>
+    <a href="explorar.html" class="genero" style="--color: #b8860b;">😂 Humor</a>
+    <a href="explorar.html" class="genero" style="--color: #6b4f4f;">🎭 Drama</a>
+    <a href="explorar.html" class="genero" style="--color: #8e4585;">🪶 Poesía</a>
+    <a href="explorar.html" class="genero" style="--color: #2e7d32;">🧭 Aventura</a>
+    <a href="explorar.html" class="genero" style="--color: #7a1f1f;">🔪 Suspenso</a>
   </div>
 </section>
 <section class="seccion">
@@ -112,22 +135,6 @@
   </div>
 
   <a href="explorar.html" class="boton-secundario">Descubrir más</a>
-</section>
-<section class="seccion">
-  <h2>Géneros</h2>
-
-  <div class="generos">
-    <a href="explorar.html" class="genero" style="--color: #b0413e;">💘 Romance</a>
-    <a href="explorar.html" class="genero" style="--color: #3d3d5c;">👻 Terror</a>
-    <a href="explorar.html" class="genero" style="--color: #4b3b8f;">🐉 Fantasía</a>
-    <a href="explorar.html" class="genero" style="--color: #2f4f4f;">🔎 Misterio</a>
-    <a href="explorar.html" class="genero" style="--color: #1f5f8b;">🚀 Ciencia ficción</a>
-    <a href="explorar.html" class="genero" style="--color: #b8860b;">😂 Humor</a>
-    <a href="explorar.html" class="genero" style="--color: #6b4f4f;">🎭 Drama</a>
-    <a href="explorar.html" class="genero" style="--color: #8e4585;">🪶 Poesía</a>
-    <a href="explorar.html" class="genero" style="--color: #2e7d32;">🧭 Aventura</a>
-    <a href="explorar.html" class="genero" style="--color: #7a1f1f;">🔪 Suspenso</a>
-  </div>
 </section>
 <section class="seccion">
   <div class="mensaje">
@@ -246,9 +253,10 @@
         </div>
       </div>
     </a>
-      </div>
-    </a>
   </div>
 </section>
+    </main>
+  </div>
+
 </body>
 </html>

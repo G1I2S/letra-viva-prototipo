@@ -58,6 +58,50 @@ a {
   border-radius: 20px;
 }
 
+/* El logo va en el menú lateral en computador y arriba en celular */
+.menu .logo-menu {
+  display: none;
+}
+
+/* Encabezado del inicio: eslogan + botón para escribir */
+.barra-inicio {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.barra-inicio .eslogan {
+  margin-bottom: 0;
+}
+
+.boton-escribir {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: var(--acento);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.boton-escribir i {
+  font-size: 32px;
+}
+
+.boton-escribir strong {
+  display: block;
+  font-size: 20px;
+}
+
+.boton-escribir small {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.boton-escribir:hover {
+  background: #c75a2c;
+}
+
 main {
   padding: 16px;
   padding-bottom: 90px; /* espacio para que el menú no tape el contenido */
@@ -83,8 +127,19 @@ main {
   color: var(--texto-suave);
 }
 
+/* Íconos del menú en naranja, menos la lupa */
+.menu a i {
+  font-size: 22px;
+  color: var(--acento);
+}
+
+.menu a i.lupa {
+  color: var(--texto);
+}
+
 .menu a.activo {
   color: var(--acento);
+  font-weight: bold;
 }
 /* Secciones del inicio */
 .seccion {
@@ -94,6 +149,11 @@ main {
 .seccion h2 {
   font-size: 20px;
   margin-bottom: 12px;
+  color: var(--acento);
+}
+
+.mensaje h2 {
+  color: var(--texto);
 }
 
 /* Carrusel */
@@ -207,7 +267,8 @@ main {
   display: block;
   width: fit-content;
   margin: 16px auto 0;
-  border: 1px solid var(--texto-suave);
+  border: 1px solid var(--acento);
+  color: var(--acento);
   padding: 8px 18px;
   border-radius: 20px;
 }
@@ -337,8 +398,9 @@ main {
 .eslogan p {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 18px;
-  color: var(--texto-suave);
+  font-size: 21px;
+  color: var(--texto);
+  margin-top: 6px;
 }
 
 .buscador {
@@ -702,11 +764,12 @@ main {
   .menu {
     top: 0;
     right: auto;
-    width: 200px;
+    width: 240px;
     flex-direction: column;
     justify-content: flex-start;
     gap: 8px;
-    padding: 80px 16px;
+    padding: 24px 16px;
+    border-right: 1px solid rgba(224, 112, 63, 0.35);
   }
 
   .menu a {
@@ -714,10 +777,44 @@ main {
     gap: 10px;
     font-size: 16px;
     padding: 10px;
+    border-radius: 10px;
+  }
+
+  .menu a.activo {
+    background: rgba(224, 112, 63, 0.15);
+  }
+
+  .menu .logo-menu {
+    display: flex;
+    margin-bottom: 24px;
+    padding: 0 4px;
+    font-size: 44px;
+    color: var(--texto);
+  }
+
+  .menu .logo-menu i {
+    font-size: 34px;
+  }
+
+  .logo-movil {
+    display: none;
+  }
+
+  /* En computador el encabezado solo se usa en el inicio */
+  .barra-superior:not(.barra-inicio) {
+    display: none;
+  }
+
+  .barra-inicio {
+    padding: 32px 16px 8px;
+  }
+
+  .eslogan h1 {
+    font-size: 30px;
   }
 
   .contenido {
-    margin-left: 200px;
+    margin-left: 240px;
   }
 
   main {
